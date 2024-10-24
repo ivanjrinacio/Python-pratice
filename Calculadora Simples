@@ -1,0 +1,26 @@
+print("### Bem-vindo a Calculadora Simples ###", end="\n\n")
+operacao = input("""
+Qual a operação você quer fazer?
+[1] Adição (+)
+[2] Subitração (-)
+[3] Multiplicação (*)
+[4] Divisão (/)
+""")
+valor1 = float(input("Insira o primeiro valor: "))
+valor2 = float(input("Insira o segundo valor: "))
+if operacao == "1":
+    calculo = valor1 + valor2
+elif operacao == "2":
+    calculo = valor1 - valor2
+elif operacao == "3":
+    calculo = valor1 * valor2
+elif operacao == "4":
+    if valor2 == 0:
+        print("Erro: Divisão por zero não é permitida.")
+    else:
+        calculo = valor1 / valor2
+else:
+    print("Operação inválida.")
+    exit()
+print(f"# O resultado da operação é {calculo:.2f}.", end="\n\n")
+print("Obrigado por usar nossa calculadora!")
