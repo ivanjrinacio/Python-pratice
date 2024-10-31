@@ -15,8 +15,7 @@ elif idade >= 66:
     valormensal = 170
 else:
     print("Valor digitado é invalido, por favor tente novamente.")
-    break
-print()
+    print()
 print(f"Nome do Beneficiário: {nome}")
 print(f"Idade do Beneficiário: {idade}")
 print(f"Nome do Beneficiário: R$ {valormensal:.2f}")
