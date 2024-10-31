@@ -1,0 +1,12 @@
+# 1. Faça um programa que leia um número e informe se ele é divisível por cinco.
+
+print("##### Verifique se o número é divisível por cinco #####", end="\n")
+numero = float(input("Número que você quer verificar: "))
+if numero % 5 == 0:
+    resultado = numero / 5
+    print("Sim, este número é divisível por 5.")
+    print(f"{numero} ÷ 5 = {resultado}")
+else:
+    resultado = numero / 5
+    print("Não, este número não é divisível por cinco")
+    print(f"{numero} ÷ 5 = {resultado}")
