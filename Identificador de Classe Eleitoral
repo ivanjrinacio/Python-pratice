@@ -1,0 +1,17 @@
+# 3. Construa um programa que receba a idade de uma pessoa e identifique sua classe eleitora: não eleitor (menor que 16 anos de idade), eleitor obrigatório (entre 18 e 65 anos) e eleitor facultativo (entre 16 e 18 e maior que 65).
+
+print("##### Identificador de Classe Eleitoral #####", end="\n\n")
+idade = int(input("Digite a idade do cidadão: "))
+if idade >= 0 and idade < 16:
+    classeeleitoral = "não eleitor"
+elif idade >= 16 and idade < 18: 
+    classeeleitoral = "eleitor facultativo"
+elif idade >= 18 and idade <= 65: 
+    classeeleitoral = "eleitor obrigatório"
+elif idade > 65: 
+    classeeleitoral = "eleitor facultativo"
+else:
+    print("Valor digitado é inválido, por favor tente novamente.")
+print()
+print(f"A idade do cidadão é: {idade}")
+print(f"Portanto, este cidadão é {classeeleitoral}.")
