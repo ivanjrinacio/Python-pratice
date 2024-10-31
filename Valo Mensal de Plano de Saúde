@@ -1,9 +1,22 @@
 # 2. Programa que exibe o valor da mensalidade do pleno de saúde.
 
-print("##### Verifique o valor do plano de saúde #####", end="\n")
+print("##### Verifique o valor do plano de saúde #####", end="\n\n")
 nome = input("Digite o nome do beneficiário: ")
-idade = int(input("Digite a idade do beneficiário: "))
-if idade <= 18:
+idade = int(input("Digite a idade do beneficiário: ",))
+if idade >= 0 and idade <= 18:
     valormensal = 50
-elif idade > 18 and < 30: 
+elif idade > 18 and idade < 30: 
     valormensal = 70
+elif idade >= 30 and idade < 45: 
+    valormensal = 90
+elif idade >= 46 and idade < 66: 
+    valormensal = 130
+elif idade >= 66: 
+    valormensal = 170
+else:
+    print("Valor digitado é invalido, por favor tente novamente.")
+    break
+print()
+print(f"Nome do Beneficiário: {nome}")
+print(f"Idade do Beneficiário: {idade}")
+print(f"Nome do Beneficiário: R$ {valormensal:.2f}")
