@@ -1,0 +1,41 @@
+# 4. Faça um programa que informe a quantidade total de calorias a partir da escolha do usuário, que deve informar o prato típico e a bebida.
+
+print("##### Contador de Calorias #####", end="\n\n")
+italiano = 750
+japones = 324
+salvadorenho = 545
+cha = 30
+suco = 80
+refri = 90
+prato = input("""Qual a sua escolha de prato?
+[1] Italiano
+[2] Japonês
+[3] Salvadorenho
+""")
+bebida = input("""Qual a sua escolha de bebida?
+[1] Chá
+[2] Suco de Laranja
+[3] Refrigerante
+""")
+if prato == "1" and bebida == "1":
+    calorias = italiano + cha 
+elif prato == "1" and bebida == "2":
+    calorias = italiano + suco
+elif prato == "1" and bebida == "3":
+    calorias = italiano + refri  
+elif prato == "2" and bebida == "1":
+    calorias = japones + cha
+elif prato == "2" and bebida == "2":
+    calorias = japones + suco
+elif prato == "2" and bebida == "3":
+    calorias = japones + refri
+elif prato == "3" and bebida == "1":
+    calorias = salvadorenho + cha
+elif prato == "3" and bebida == "2":
+    calorias = salvadorenho + suco
+elif prato == "3" and bebida == "3":
+    calorias = salvadorenho + refri
+else:
+    print("Valor digitado é inválido, por favor tente novamente.")
+print()
+print(f"O número de calorias da sua refeição será {calorias} cal.")
