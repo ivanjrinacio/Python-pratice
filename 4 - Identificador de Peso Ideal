@@ -1,0 +1,13 @@
+# 4. De acordo com uma tabela médica, o peso ideal está relacionado com a altura e o sexo de uma pessoa. Elabore um algoritmo que receba altura e sexo de uma pessoa e calcule e imprima seu peso ideal.
+
+print("##### Identificador de Peso Ideal #####", end="\n\n")
+genero = input("Qual o seu gênero (M/F)? ")
+altura = float(input("Qual a sua altura (ex: 1.67)? "))
+if genero == "M":
+    pesoideal = (altura * 72.7) - 58 
+elif genero == "F": 
+    pesoideal = (altura * 62.1) - 44.7
+else:
+    print("Valor digitado é inválido, por favor tente novamente.")
+print()
+print(f"O seu peso ideal é {pesoideal:.3f}.")
