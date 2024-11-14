@@ -1,0 +1,30 @@
+# É comum, em uma aplicação, ter de determinar quais números são o maior ou o menor, dentre todos os valores de um conjunto de dados informados pelo usuário. Assim sendo, escreva um programa que receba cinco números inteiros e apresente o maior e o menor entre todos eles.
+print("##### Verificador de maior e menor número #####", end="\n\n")
+maiornum = float(input("Digite o primeiro número: "))
+numero2 = float(input("Digite o segundo número: "))
+numero3 = float(input("Digite o terceiro número: "))
+numero4 = float(input("Digite o quarto número: "))
+numero5 = float(input("Digite o quinto número: "))
+if numero2 > maiornum:
+    maiornum = numero2
+elif numero3 > maiornum:
+    maiornum = numero3
+elif numero4 > maiornum:
+    maiornum = numero4
+elif numero5 > maiornum:
+    maiornum = numero5
+else:
+    print("O valor digitado é inválido, tente novamente.")
+print(f"O MAIOR número digitado foi {maiornum}.")
+menornum = maiornum 
+if numero2 < menornum:
+    menornum = numero2
+elif numero3 < menornum:
+    menornum = numero3
+elif numero4 < menornum:
+    menornum = numero4
+elif numero5 < menornum:
+    menornum = numero5
+else:
+    print("O valor digitado é inválido, tente novamente.")
+print(f"O MENOR número digitado foi {menornum}.")
