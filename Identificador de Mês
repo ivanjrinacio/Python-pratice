@@ -1,0 +1,29 @@
+# Considere uma aplicação que necessita de um calendário embutido. Assim sendo, construa um programa que, dado um número inteiro, informe o mês correspondente, por extenso.
+print("##### Identificador de mês #####", end="\n\n")
+mes = int(input("Digite o número correspondente ao mês que você quer identificar(1 a 12): "))
+if mes == 1:
+    print("Mês digitado corresponde a JANEIRO.")
+elif mes == 2:
+    print("Mês digitado corresponde a FEVEREIRO.")
+elif mes == 3:
+    print("Mês digitado corresponde a MARÇO.")
+elif mes == 4:
+    print("Mês digitado corresponde a ABRIL.")
+elif mes == 5:
+    print("Mês digitado corresponde a MAIO.")
+elif mes == 6:
+    print("Mês digitado corresponde a JUNHO.")
+elif mes == 7:
+    print("Mês digitado corresponde a JULHO.")
+elif mes == 8:
+    print("Mês digitado corresponde a AGOSTO.")
+elif mes == 9:
+    print("Mês digitado corresponde a SETEMBRO.")
+elif mes == 10:
+    print("Mês digitado corresponde a OUTUBRO.")
+elif mes == 11:
+    print("Mês digitado corresponde a NOVEMBRO.")
+elif mes == 12:
+    print("Mês digitado corresponde a DEZEMBRO.")
+else:
+    print("Valor digitado é inválido, por favor tente novamente")
