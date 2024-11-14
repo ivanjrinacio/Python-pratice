@@ -1,0 +1,13 @@
+# Em algumas situações, em uma aplicação, é preciso determinar quais são os números múltiplos de um ou mais valores, dentre todos os valores de um conjunto de dados. Dessa forma, faça um programa que receba, do usuário, um número e informe se ele é divisível por três ou por sete.
+print("##### Verificador de divisibilidade por 3 ou 7 #####", end="\n\n")
+numero = float(input("Digite o número que você quer verificar: "))
+if numero % 3 == 0 and numero % 7 != 0:
+    print("O número informado É divisível por 3 apenas.")
+elif numero % 3 != 0 and numero % 7 != 0:
+    print("O número informado NÃO É divisível por 3 e nem por 7.")
+elif numero % 3 == 0 and numero % 7 == 0:
+    print("O número informado É divisível por 3 e por 7.")
+elif numero % 3 != 0 and numero % 7 == 0:
+    print("O número informado É divisível por 7 apenas.")
+else:
+    print("O número informado é inválido, tente novamente.")
