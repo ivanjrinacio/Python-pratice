@@ -1,0 +1,20 @@
+# Elabore um programa que receba o salário de um funcionário e o código do cargo e apresente o cargo, o valor do aumento e o novo salário.
+print("##### Calculadora de bônus salarial #####", end="\n\n")
+cargo = input("""Escolha o código do cargo que deseja verificar:
+[1] Servente
+[2] Pedreiro
+[3] Mestre de obras
+[4] Técnico de segurança
+""")
+salario = float(input("Digite o salário que deseja verifica(R$): "))
+if cargo == "1":
+    salario = salario * 1.40
+elif cargo == "2":
+    salario = salario * 1.35
+elif cargo == "3":
+    salario = salario * 1.20
+elif cargo == "4":
+    salario = salario * 1.10
+else:
+    print("Valor digitado inválido, tente novamente.")
+print(f"O seu novo salário será R$ {salario:.2f}.")
