@@ -1,0 +1,25 @@
+# Escreva um programa que receba a idade e a altura de várias pessoas, em sequência. Calcule e apresente a média de altura e idade das pessoas. A entrada de dados deve ser encerrada se, e somente se, for digitado 0 para o valor de idade.
+print("##### Coleta de informações de Idade e Altura #####", end="\n\n")
+
+def calcular_estatisticas(): 
+    idades = []
+    alturas = []
+    
+    while True:
+        idade = int(input("Informe a idade (ou digite 0 para encerrar o programa): "))
+        if idade == 0:
+            break
+        altura = float(input("Informe a altura(m): "))
+        
+        idades.append(idade)
+        alturas.append(altura)
+        
+    if len(idades) > 0:
+        media_idades = sum(idades) / len(idades)
+        media_alturas = sum(alturas) / len(alturas)
+        print(f"A média das idades informadas é: {media_idades:.2f}")
+        print(f"A média das alturas informadas é: {media_alturas:.2f}")
+    else:
+        print("Nenhum dado informado")
+    
+calcular_estatisticas()
