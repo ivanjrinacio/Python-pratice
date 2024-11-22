@@ -1,0 +1,7 @@
+# Elabore um programa que apresente todos os números divisíveis por três que sejam menores que 100.
+print("##### Números divisíveis por três < 100 #####", end="\n\n")
+ndiv = 0
+for numero in range (0, 100, 3):
+    if numero % 3 == 0:
+      ndiv += 1
+print("O total de números divisíveis por 3 é", ndiv)
