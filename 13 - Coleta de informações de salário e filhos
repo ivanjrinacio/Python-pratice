@@ -1,0 +1,28 @@
+# A prefeitura de uma cidade inteligente está coletando informações sobre o salário e o número de filhos dos habitantes. A leitura dos dados é realizada até que seja informado o valor -1 por parte do usuário, para o salário. Apresente a média de salário da população informada, a média de filhos e o maior salário.
+print("##### Coleta de informações de Salário e número de filhos #####", end="\n\n")
+
+def calcular_estatisticas(): 
+    salarios = []
+    num_filhos = []
+    maior = 0
+
+    while True:
+        salario = int(input("Informe o salário (ou digite -1 para encerrar): "))
+        if salario == -1:
+            break
+        num_filho = int(input("Informe o número de filhos: "))
+    
+        salario.append(salarios)
+        num_filho.append(num_filhos)
+        maior_salario = max(salarios)
+
+    if len(salarios) > 0:
+        media_salarial = sum(salarios) / len(salarios)
+        media_filhos = sum(num_filhos) / len(num_filhos)
+        print(f"A média salarial é: R$ {media_salarial:.2f}")
+        print(f"A média de filhos é: {media_filhos:.2f}")
+        print(f"O maior salário informado é: {maior_salario:.2f}")
+    else:
+        print("Nenhum dado foi informado")
+
+calcular_estatisticas()
