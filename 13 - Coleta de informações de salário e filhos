@@ -4,7 +4,7 @@ print("##### Coleta de informações de Salário e número de filhos #####", end
 def calcular_estatisticas(): 
     salarios = []
     num_filhos = []
-    maior = 0
+    maior_salario = 0
 
     while True:
         salario = int(input("Informe o salário (ou digite -1 para encerrar): "))
@@ -12,9 +12,9 @@ def calcular_estatisticas():
             break
         num_filho = int(input("Informe o número de filhos: "))
     
-        salario.append(salarios)
-        num_filho.append(num_filhos)
-        maior_salario = max(salarios)
+        salarios.append(salario)
+        num_filhos.append(num_filho)
+        maior_salario = max(maior_salario, salario)
 
     if len(salarios) > 0:
         media_salarial = sum(salarios) / len(salarios)
