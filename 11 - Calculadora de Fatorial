@@ -1,0 +1,10 @@
+# Faça um programa que leia um número inteiro e, depois, calcule e mostre o seu respectivo fatorial.
+print("##### Calculadora de Fatorial #####", end="\n\n")
+fatorial = 1
+i = int(input("Digite o número NATURAL que você quer verificar: "))
+if i <= 0:
+    print("Valor inválido, por favor digite um numero natural")
+else:
+    for i in range (i, 0, -1):
+        fatorial = fatorial * i 
+print("O fatorial deste número é ", fatorial)
